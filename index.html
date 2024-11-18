@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipolazione DOM</title>
+    <style>
+        /* Stilizzazione di base per i paragrafi */
+        p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Paragrafi -->
+    <p id="paragrafo1">Questo è il primo paragrafo.</p>
+    <p id="paragrafo2">Questo è il secondo paragrafo.</p>
+    <p id="paragrafo3">Questo è il terzo paragrafo.</p>
+
+    <!-- Bottoni -->
+    <button id="cambiaColoreBtn">Cambia colore testo</button>
+    <button id="grassettoBtn">Metti in grassetto</button>
+    <button id="toggleParagrafiBtn">Scompari/Ricompari paragrafi</button>
+    
+    <!-- Input per il titolo -->
+    <label for="titolo">Titolo dell'articolo:</label>
+    <input type="text" id="titolo" placeholder="Inserisci il titolo">
+
+    <br><br>
+
+    <!-- Textarea per il paragrafo -->
+    <label for="paragrafo">Contenuto dell'articolo:</label>
+    <textarea id="paragrafo" rows="5" cols="40" placeholder="Inserisci il contenuto"></textarea>
+
+    <br><br>
+
+    <!-- Bottone per creare l'articolo -->
+    <button id="creaArticoloBtn">Crea Articolo</button>
+
+    <div id="articoloContainer"></div>
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
